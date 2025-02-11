@@ -1,0 +1,17 @@
+.headerStyle{
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    position: fixed;
+    box-sizing: border-box;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
