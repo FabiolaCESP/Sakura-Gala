@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 60rem;
+    overflow: hidden;
 }
 
 .sakuraTitle {
@@ -11,7 +12,15 @@
     background: none;
 }
 
-.cardImage {
-    height: 36vh;
+.circleEffectStyle{
+    position: absolute;
     background: none;
+    z-index: 1;
+    height: 20rem;
+}
+
+.cardImage {
+    height: 35rem;
+    background: none;
+    z-index: 10;
 }
