@@ -12,13 +12,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url("../src/assets/images/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .body {
     display: flex;
-    background-image: url("../src/assets/images/background.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'Macondo';
     height: 100vh;
 }

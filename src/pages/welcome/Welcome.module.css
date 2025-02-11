@@ -1,0 +1,17 @@
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+}
+
+.sakuraTitle {
+    font-family: 'Macondo Regular';
+    background: none;
+}
+
+.cardImage {
+    height: 36vh;
+    background: none;
+}
