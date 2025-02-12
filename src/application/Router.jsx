@@ -9,6 +9,7 @@ function Router() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />}/>
+                <Route path="/instructions" element={<Instructions />}/>
             </Routes>
         </BrowserRouter>
     )
