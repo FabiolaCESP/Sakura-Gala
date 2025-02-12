@@ -9,13 +9,13 @@ function Instructions() {
     return (
         <>
         <Header/>
-        <div className={styles.induction}>
+        <main className={styles.instructions}>
             <InstructionsBox />
             <ButtonBig 
             text="Ir a LECTURAS"
             link="/"
             />
-        </div>
+        </main>
         </>
     )
 }
