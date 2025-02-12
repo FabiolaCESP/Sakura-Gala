@@ -1,0 +1,26 @@
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+    overflow: hidden;
+}
+
+.sakuraTitle {
+    font-family: 'Macondo Regular';
+    background: none;
+}
+
+.circleEffectStyle{
+    position: absolute;
+    background: none;
+    z-index: 1;
+    height: 20rem;
+}
+
+.cardImage {
+    height: 35rem;
+    background: none;
+    z-index: 10;
+}
