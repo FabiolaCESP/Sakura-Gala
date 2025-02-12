@@ -1,7 +1,7 @@
 import styles from './Welcome.module.css'
 import sakuraUnicorn from '../../assets/images/unicorn.webp'
 import circleEffect from '../../assets/images/circle.webp'
-import ButtonBig from '../../components/buttons/bigButton2/bigButton'
+import ButtonBig from '../../components/buttons/mainButton/bigButton'
 
 function PageWelcome () {
 

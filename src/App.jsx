@@ -1,4 +1,4 @@
-import PageWelcome from './pages/welcome/Welcome'
+import PageWelcome from './pages/welcome/welcome'
 //DESCOMENTAR PARA AÑADIR LA PAGINA PRINCIPAL
 
 function App() {

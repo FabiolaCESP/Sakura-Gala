@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import App from "../App"
-import Instructions from "../pages/instructions/Instructions"
+import Instructions from "../pages/instructions/instructions"
 
 
 function Router() {
