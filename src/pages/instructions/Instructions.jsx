@@ -7,7 +7,6 @@ function Instructions() {
     return (
         <>
         <div className={styles.induction}>
-            {/* </> */}
             <InstructionsBox />
             <ButtonBig 
             text="Ir a LECTURAS"
