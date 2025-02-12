@@ -1,0 +1,10 @@
+.instructionsBox {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Macondo", sans-serif;
+  font-size: 18px;
+  color: #3e2723;
+  max-width: 90%;
+  margin: 20px auto; 
+}
