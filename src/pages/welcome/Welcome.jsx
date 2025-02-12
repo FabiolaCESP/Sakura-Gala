@@ -13,7 +13,7 @@ function PageWelcome () {
             <img className={styles.cardImage} src={sakuraUnicorn}/>
             < ButtonBig
             text="Entrar"
-            link="/Instructions"
+            link="/instructions"
             />
         </main>
         

@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import App from "../App"
 import Instructions from "../pages/instructions/Instructions"
-//DESCOMENTAR CON CADA LINK IMPORTADO
 
 
 function Router() {
@@ -10,8 +9,6 @@ function Router() {
             <Routes>
                 <Route path="/" element={<App />}/>
                 <Route path="/instructions" element={<Instructions />}/>
-                <Route path="/readings" element={<Lecturas />}/>
-                <Route path="/" element={<Favoritos />}/>
             </Routes>
         </BrowserRouter>
     )
