@@ -20,7 +20,7 @@
     height: 100vh;
 
 }
-*/
+
 :root{
    --orange-gala: #FFA64E;
    --purple-gala: #A9688A;
@@ -29,12 +29,12 @@
    --red-gala: #BB3144;
    --darkPurple-gala: #8B6784;
    --black-gala: black;
+    --white-gala: white;
 
    background-image: url("../src/assets/images/background.webp");
    background-repeat: no-repeat;
    background-size: cover;
-}
-    --white-gala: white;
+ 
 
   /*  --gradient-bg: radial-gradient(
   ellipse 40% 120% at 50% 30%, 
