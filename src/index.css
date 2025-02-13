@@ -12,9 +12,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("../src/assets/images/background.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .body {
@@ -22,7 +19,7 @@
     font-family: 'Macondo';
     height: 100vh;
 }
-
+*/
 :root{
    --orange-gala: #FFA64E;
    --purple-gala: #A9688A;
@@ -31,4 +28,17 @@
    --red-gala: #BB3144;
    --darkPurple-gala: #8B6784;
    --black-gala: black;
+    --white-gala: white;
+
+  /*  --gradient-bg: radial-gradient(
+  ellipse 40% 120% at 50% 30%, 
+  rgba(181, 148, 181, 0.5) 5%,
+  rgba(200, 149, 200, 0.4) 20%,
+  rgba(81, 54, 165, 0.3) 40%,
+  rgba(61, 39, 128, 0.2) 70%,
+  rgba(0, 0, 0, 0) 100%
+);*/
 }
+
+
+
