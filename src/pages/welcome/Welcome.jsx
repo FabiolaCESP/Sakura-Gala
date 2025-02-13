@@ -3,6 +3,7 @@ import sakuraUnicorn from '../../assets/images/unicorn.webp'
 import circleEffect from '../../assets/images/circle.webp'
 import ButtonBig from '../../components/buttons/mainButton/bigButton'
 import Footer from '../../components/footer/Footer'
+import UserForm from '../../components/form/userForm'
 
 function PageWelcome () {
 
@@ -13,10 +14,8 @@ function PageWelcome () {
             <img className={styles.circleEffectStyle} src={circleEffect}/>
             <img className={styles.cardImage} src={sakuraUnicorn}/>
 
-            <ButtonBig 
-            text="Entrar"
-            link="/instructions"
-            />
+            <UserForm/>
+
             <Footer />
         </main>
         
