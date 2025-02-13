@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import App from "../App"
 import Instructions from "../pages/instructions/instructions"
+import FanOfCards from "../components/FanOfCards/FanOfCards"
 
 
 function Router() {
@@ -9,6 +10,7 @@ function Router() {
             <Routes>
                 <Route path="/" element={<App />}/>
                 <Route path="/instructions" element={<Instructions />}/>
+                <Route path="/reading" element={<FanOfCards />}/>
             </Routes>
         </BrowserRouter>
     )
