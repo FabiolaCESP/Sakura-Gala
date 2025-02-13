@@ -12,15 +12,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("../src/assets/images/background.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .body {
     display: flex;
     font-family: 'Macondo';
     height: 100vh;
+
 }
 
 :root{
@@ -31,4 +29,8 @@
    --red-gala: #BB3144;
    --darkPurple-gala: #8B6784;
    --black-gala: black;
+
+   background-image: url("../src/assets/images/background.webp");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
