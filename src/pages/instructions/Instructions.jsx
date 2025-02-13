@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import InstructionsBox from '../../components/instructionsBox/InstructionsBox';
 import styles from './Instructions.module.css'
 import ButtonBig from '../../components/buttons/mainButton/bigButton';
-//import Header from '../../components/header/Header';
-import Navbar from '../../components/navbar/Navbar';
-import { useMediaQuery } from 'react-responsive';
-import Footer from '../../components/footer/Footer';
+import Header from '../../components/header/Header';
+import cardsthree from '../../assets/images/cards3.svg'
 
 
 function Instructions() {
@@ -16,10 +14,14 @@ function Instructions() {
         {isDesktop && <Navbar />} 
         <main className={styles.instructions}>
             <InstructionsBox />
-            <ButtonBig 
+        <div className={styles.cardsButton}>
+          <img src={cardsthree} alt="Tarot Cards" className={styles.tarotImage} />
+          <ButtonBig 
             text="Ir a LECTURAS"
             link="/"
             />
+        </div>
+           
         </main>
         <Footer  />
         </>

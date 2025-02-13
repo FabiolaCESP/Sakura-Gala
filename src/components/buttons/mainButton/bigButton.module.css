@@ -1,3 +1,12 @@
 .buttonStyle{
-    background-color: var(orange-gala);
+    background-color: var(--orange-gala);
+    color: var(--black-gala);
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 39px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "Macondo", sans-serif;
+    height: 41px;
 }
