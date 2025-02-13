@@ -4,6 +4,9 @@ import styles from './Instructions.module.css'
 import ButtonBig from '../../components/buttons/mainButton/bigButton';
 import Header from '../../components/header/Header';
 import cardsthree from '../../assets/images/cards3.svg'
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
+import { useMediaQuery } from 'react-responsive';
 
 
 function Instructions() {
