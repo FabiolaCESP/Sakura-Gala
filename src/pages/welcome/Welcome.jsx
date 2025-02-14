@@ -1,7 +1,6 @@
 import styles from './Welcome.module.css'
 import sakuraUnicorn from '../../assets/images/unicorn.webp'
 import circleEffect from '../../assets/images/circle.webp'
-import ButtonBig from '../../components/buttons/mainButton/bigButton'
 import Footer from '../../components/footer/Footer'
 import UserForm from '../../components/form/userForm'
 
