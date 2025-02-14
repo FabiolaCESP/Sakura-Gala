@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-
+/*import React, { useState, useRef, useEffect } from "react";
+import ApiTarot from "../../apiservice/ApiTarot";
 
 
 function FanOfCards() {
@@ -8,7 +8,7 @@ function FanOfCards() {
   const [startX, setStartX] = useState(0);
   const [cardsData, setCardsData] = useState([]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     fetch('https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/')
       .then((res) => res.json())
       .then((data) => {
@@ -17,30 +17,30 @@ function FanOfCards() {
       .catch((err) => {
         console.error('Error fetching cards:', err);
       });
-  }, []);
+  }, []);*/
 
   // For a real app, you might want to measure the container size dynamically.
   // Here we pick something static for simplicity.
-  const radius = 300;
+ /* const radius = 300;
 
   // We'll position the circle center near the bottom of the screen,
   // so we only see the top arc of the circle.
   // Adjust these values as needed:
-  const centerX = window.innerWidth / 2;     // horizontally center
+ /* const centerX = window.innerWidth / 2;     // horizontally center
   const centerY = window.innerHeight + 200;  // well below the bottom
 
   // Optional ratio that converts horizontal drag distance into rotation degrees.
   // Tweak to feel good for your UI.
-  const DRAG_TO_DEG = 0.3; // degrees per pixel of drag
+ /* const DRAG_TO_DEG = 0.3; // degrees per pixel of drag
 
   // MOUSE DOWN
-  const handleMouseDown = (e) => {
+  /*const handleMouseDown = (e) => {
     setIsDragging(true);
     setStartX(e.clientX);
   };
 
   // MOUSE MOVE
-  const handleMouseMove = (e) => {
+ /* const handleMouseMove = (e) => {
     if (!isDragging) return;
 
     const dx = e.clientX - startX;
@@ -52,7 +52,7 @@ function FanOfCards() {
   };
 
   // MOUSE UP / LEAVE
-  const handleMouseUp = () => {
+ /* const handleMouseUp = () => {
     setIsDragging(false);
   };
   const handleMouseLeave = () => {
@@ -60,14 +60,14 @@ function FanOfCards() {
   };
 
   // Build the array of card elements
-  const cards = [];
+ /* const cards = [];
   for (let i = 0; i < cardsData.length; i++) {
     const card = cardsData[i];
     const angle = (360 / cardsData.length) * i + rotation;
     const rad = (angle * Math.PI) / 180;
 
     // We'll offset the card by half its width/height so it is centered
-    const cardWidth = 80;
+   /* const cardWidth = 80;
     const cardHeight = 120;
 
     const x = centerX + radius * Math.cos(rad) - cardWidth / 2;
@@ -75,7 +75,7 @@ function FanOfCards() {
 
     // If you want the card to rotate *with* the arc, do `transform: rotate(${angle}deg)`.
     // If you want them upright, omit the rotate or set it to 0deg. Below, we keep them upright.
-    cards.push(
+   /* cards.push(
       <div
         key={card.id}
         style={{
@@ -91,9 +91,9 @@ function FanOfCards() {
           borderRadius: 4,
           // Keep upright:
           transformOrigin: "center center",
-          transform: "rotate(0deg)",
+          transform: "rotate(0deg)",*/
           // If you want them to tilt along the circle, do: transform: `rotate(${angle}deg)`
-        }}
+       /* }}
       ></div>
     );
   }
@@ -116,6 +116,6 @@ function FanOfCards() {
       {cards}
     </div>
   );
-}
 
-export default FanOfCards;
+
+export default FanOfCards;*/
