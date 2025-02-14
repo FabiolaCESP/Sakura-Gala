@@ -8,7 +8,7 @@ function PageWelcome () {
 
     return (
         <>
-        <main className={styles.mainSection}>
+         <main className={styles.mainSection}>
             <h1 className={styles.sakuraTitle}>Sakura Tarot</h1>
             <img className={styles.circleEffectStyle} src={circleEffect}/>
             <img className={styles.cardImage} src={sakuraUnicorn}/>
@@ -16,6 +16,7 @@ function PageWelcome () {
             <UserForm/>
 
             <Footer />
+            
         </main>
         
         </>
