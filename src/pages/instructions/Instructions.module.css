@@ -4,15 +4,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60rem;
+    height: 40rem;
     overflow: hidden;
     background:none;
+    font-size: 12px;
+
 }
 .cardsButton {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     border-radius: 10px;
     max-width: 90%;
     margin: 20px auto;
@@ -25,8 +26,22 @@
 
 @media (max-width: 600px) {
     .cardsButton {
-        padding: 15px;
-        font-size: 16px;
+        font-size: 12px;
     }
 
 }
+
+/* @media (min-width: 768px) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .navItem {
+      font-size: 1em;
+    }
+  
+    .navItem img {
+      width: 30px;
+      height: 30px;
+    }
+  } */

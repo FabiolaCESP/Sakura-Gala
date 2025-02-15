@@ -17,8 +17,6 @@
 .body {
     display: flex;
     font-family: 'Macondo';
-    height: 80vh;
-
 }
 
 :root{
@@ -34,7 +32,6 @@
    background-image: url("../src/assets/images/background.webp");
    background-repeat: no-repeat;
    background-size: cover;
- 
 
   /*  --gradient-bg: radial-gradient(
   ellipse 40% 120% at 50% 30%, 

@@ -28,6 +28,7 @@
 }
 
 .active {
+  font-family: 'Macondo';
   color: var(--orange-gala);
 }
 

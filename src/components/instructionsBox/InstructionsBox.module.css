@@ -1,9 +1,9 @@
 .instructionsBox {
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   text-align: center;
   font-family: "Macondo", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color:var(--black-gala);
   max-width: 90%;
   margin: 20px auto; 

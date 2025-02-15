@@ -14,7 +14,6 @@ function Instructions() {
     return (
         <>
          <Header/>
-     {/*   <Header/>*/} 
         {isDesktop && <Navbar />} 
         <main className={styles.instructions}>
             <InstructionsBox />

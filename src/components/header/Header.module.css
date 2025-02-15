@@ -1,29 +1,47 @@
 .headerStyle{
   color:white;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px;
+  padding-bottom: 0%;
+  padding-top: 5px;
   display: flex;
   background-color: var(--black-gala);
   font-family: 'Macondo';
   align-items: center;
   justify-content: space-between; 
- 
 }
- 
 
 .title{
-  
   font-size: 1em;
   align-items: center;
-
 }
 
 .cardicon img {
-  height: 30px; 
+  height: 40px; 
   margin-right: 10px; 
-
 }
 
+.cardicon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.Inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.Inicio img {
+  padding-right: 4px;
+  height: auto;
+  width: 30px;
+}
 
   @media screen and (min-width: 768px) {
     .header {
