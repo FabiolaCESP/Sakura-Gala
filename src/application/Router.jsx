@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import App from "../App"
-import Instructions from "../pages/instructions/instructions"
-/*import FanOfCards from "../components/FanOfCards/FanOfCards"*/
+import Instructions from "../pages/instructions/Instructions"
+import TarotReading from "../components/TarotReading/TarotReading"
+
 
 
 function Router() {
@@ -10,7 +11,7 @@ function Router() {
             <Routes>
                 <Route path="/" element={<App />}/>
                 <Route path="/instructions" element={<Instructions />}/>
-                {/*<Route path="/reading" element={<FanOfCards />}/>*/}
+                <Route path="/tarotReading" element={<TarotReading />}/>
             </Routes>
         </BrowserRouter>
     )

@@ -14,7 +14,6 @@ function Instructions() {
     return (
         <>
          <Header/>
-     {/*   <Header/>*/} 
         {isDesktop && <Navbar />} 
         <main className={styles.instructions}>
             <InstructionsBox />
@@ -22,7 +21,7 @@ function Instructions() {
           <img src={cardsthree} alt="Tarot Cards" className={styles.tarotImage} />
           <ButtonBig 
             text="Ir a LECTURAS"
-            link="/"
+            link="/tarotReading"
             />
         </div>
            

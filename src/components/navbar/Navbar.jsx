@@ -18,7 +18,7 @@ const Navbar = () => {
         <span>Instrucciones</span>
       </NavLink>
       <NavLink
-        to="/reading"
+        to="/tarotReading"
         className={({ isActive }) =>
           isActive ? styles.active : styles.navItem
         }

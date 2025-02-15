@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: 'macondo', sans-serif;
+  }
+  
+  .title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--orange-gala);
+  }
+  
+  .error {
+    color: var(--red-gala);
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--red-gala);
+    border-radius: 8px;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
