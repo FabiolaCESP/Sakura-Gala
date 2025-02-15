@@ -1,0 +1,91 @@
+.readingsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.readingsContainer h1 {
+    align-items: center;
+}
+
+.readingsTitle {
+    font-family: "Macondo", sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.readingsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 40px;   
+    position: relative;
+}
+
+.deleteButton {
+    position: absolute;
+    top: -24px;
+    right: 0px;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--black-gala);
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.deleteButton:hover {
+    transform: scale(1.2);
+}
+
+
+.userDetail button {
+    background: transparent; 
+    padding: 5px 10px;
+    font-size: 1rem; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.userDetail {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: var(--black-gala);
+    font-family: "Macondo", sans-serif;
+    width: 100%;
+}
+
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+.rightSection {
+    display: flex;
+    align-items: center;
+}
+
+.userDetail button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
