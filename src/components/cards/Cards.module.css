@@ -67,3 +67,33 @@
     transform: scale(1.05);
   }
 }
+@media (max-width: 768px) {
+  .cardInner {
+    width: 120px;
+    height: 180px;
+  }
+
+  .cardFront,
+  .cardBack {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  @media (max-width: 480px) {
+    .cardWrapper {
+      flex-direction: column;
+    }
+
+    .cardInner {
+      width: 100px;
+      height: 150px;
+    }
+  }
+}

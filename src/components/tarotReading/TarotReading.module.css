@@ -11,7 +11,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+  /*
 
   .readingContainer {
     width: 90%;
@@ -24,7 +24,7 @@
     text-align: center;
     position: relative;
   }
-  
+  /*
 
   .fanContainer {
     position: absolute;
@@ -41,3 +41,4 @@
     transform: rotate(var(--rotation));
     transition: transform 0.3s ease;
   }
+*/
