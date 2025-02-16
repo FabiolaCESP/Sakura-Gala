@@ -4,12 +4,13 @@
   align-items: center;
   gap: 8px;
   margin-top: 15px;
+  margin-left: 2rem;
 }
 
 .buttonStyle {
   background-color: var(--orange-gala);
   color: var(--black-gala);
-  font-size: 20px;
+  font-size: 1rem;
   border: none;
   padding: 10px 20px;
   border-radius: 35px;
@@ -29,9 +30,9 @@
   cursor: not-allowed;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .buttonsContainer {
     flex-direction: row;
     justify-content: center;
   }
-}
+} */

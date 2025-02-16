@@ -51,7 +51,6 @@ const Reading = () => {
   return (
     
     <div className={styles.container}>
-      <h2 className={styles.title}>Lectura de Tarot Sakura</h2>
 
     <Header/>
     {isDesktop && <Navbar />} 
@@ -59,16 +58,23 @@ const Reading = () => {
     <NameAndDate/>
       {error && <div className={styles.error}>{error}</div>}
 
-      <ButtonGroup onClick={fetchThreeUniqueCards} onClear={clearReading} disabled={isLoading}  selectedCards={selectedCards}/>
+      <div className={styles.readingCard}>
+          <div className={styles.cardsContainer}>
+            {selectedCards &&
+              Object.entries(selectedCards).map(([position, card]) => (
+                <Card key={position} card={card} position={position} />
+              ))}
+          </div>
 
-      <div className={styles.cardsContainer}>
-        {selectedCards &&
-          Object.entries(selectedCards).map(([position, card]) => (
-            <Card key={position} card={card} position={position} />
-          ))}
+         <div>
+          <ButtonGroup onClick={fetchThreeUniqueCards} onClear={clearReading} disabled={isLoading}  selectedCards={selectedCards}/>
+          </div>
       </div>
 
-      <FanOfCards isFanned={isFanned} />
+          <div className={styles.fanCardsCard}>
+          <FanOfCards isFanned={isFanned} />
+          </div>
+          
     </div>
   );
 };

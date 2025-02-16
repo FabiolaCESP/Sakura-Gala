@@ -9,6 +9,12 @@
     font-family: 'macondo', sans-serif;
   }
   
+  .readingCard {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 33vh;
+  }
+
   .title {
     margin-bottom: 30px;
     font-size: 2rem;
@@ -23,9 +29,24 @@
     border-radius: 8px;
   }
   
+  .fanCardsCard {
+    display: flex;
+  }
+
   .cardsContainer {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
+  }
+
+  @media (min-width: 768px) {
+    .readingCard {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 80%;
+      align-items: center;
+      height: 10vh;
+    }
   }

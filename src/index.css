@@ -30,17 +30,17 @@
     --white-gala: white;
 
    background-image: url("../src/assets/images/background.webp");
-   background-repeat: no-repeat;
    background-size: cover;
 
-  /*  --gradient-bg: radial-gradient(
+
+   /* --gradient-bg: radial-gradient(
   ellipse 40% 120% at 50% 30%, 
   rgba(181, 148, 181, 0.5) 5%,
   rgba(200, 149, 200, 0.4) 20%,
   rgba(81, 54, 165, 0.3) 40%,
   rgba(61, 39, 128, 0.2) 70%,
   rgba(0, 0, 0, 0) 100%
-);*/
+); */
 }
 
 
