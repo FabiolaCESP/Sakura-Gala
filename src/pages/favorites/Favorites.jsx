@@ -4,33 +4,35 @@ import styles from './Favorites.module.css';
 import Card from '../../components/cards/Cards';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
-import { getReadings } from '../../services/FavoritesApiServices';
-import UserFormEdit from '../../components/form/userFormEdit';
+import { deleteReading, getReadings } from '../../services/FavoritesApiServices';
+import NameAndDate from '../../components/nameAndDate/nameAndDate';
+
 
 const Favorites = () => {
   const [savedFavoritesList, setsavedFavoritesList] = useState([]);
-  const [nameUser, setNameUser] = useState('');
-  const [open, setopen] = useState(false);
+  
+  const getFavoriteList = async () => {
+    const result = await getReadings()
+    console.log(result)
+    setsavedFavoritesList(result)
+  }
 
   useEffect(() => {
-    const value = localStorage.getItem('username')
-    if (value !== null && value !== "undefined") {
-      setNameUser(JSON.parse(localStorage.getItem('username')))
-    }
-
-    const getFavoriteList = async () => {
-      const result = await getReadings()
-      console.log(result)
-      setsavedFavoritesList(result)
-    }
     getFavoriteList()
   }, []);
 
-
-
-  const handleEditName = () => {
-    setopen(!open)
+  const onDeleteCard = async (id) => {
+    const result = await deleteReading(id)
+     await getFavoriteList()
   }
+
+  const onDeleteCards = async () => {
+    for await (const element of savedFavoritesList) {
+      await onDeleteCard(element.id)
+    }
+    await getFavoriteList()
+  }
+
 
   return (
     <>
@@ -40,28 +42,26 @@ const Favorites = () => {
 
         <ButtonBig
           text="Borrar todo"
+          onClick={onDeleteCards}
+          disabled={savedFavoritesList.length === 0 }
         />
-
-        <div className={styles.userDetail}>
-          <div className={styles.leftSection}>
-            {!open && <><span>Nombre:{nameUser}</span> <button onClick={handleEditName}>✏️</button></>}
-            {open && <UserFormEdit onFinish={setopen} updateUsername={setNameUser} />}
-
-          </div>
-
-          <div className={styles.rightSection}>
-            <span>Fecha: 12/02/25</span>
-          </div>
-        </div>
-
-
         {
           savedFavoritesList.map((item, ind) => {
             return (
-              <section key={`section-${ind}`} className={styles.readingsList}>
-                <button className={styles.deleteButton}>❌</button>
-                <Card card={item} position={"futuro"} />
-              </section>
+              <>
+               <NameAndDate key={`nameAndDate-${ind}`} savedDate={item.date} savedName={item.nameSaved}  />
+           
+                <section key={`section-${ind}`} className={styles.readingsList}>
+                  <button className={styles.deleteButton} onClick={()=>{
+                    onDeleteCard(item.id)
+                  }}>❌</button>
+                  {item.selectedCards &&
+                    Object.entries(item.selectedCards).map(([position, card]) => (
+                      <Card key={position} card={card} position={position} />
+                    ))}
+               
+                </section>
+              </>
             )
           })
         }

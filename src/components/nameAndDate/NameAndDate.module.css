@@ -1,0 +1,32 @@
+
+.userDetail button {
+    background: transparent; 
+    padding: 5px 10px;
+    font-size: 1rem; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.userDetail {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: var(--black-gala);
+    font-family: "Macondo", sans-serif;
+    width: 100%;
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+}
