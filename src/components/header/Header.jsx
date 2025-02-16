@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 
 function Header(){
     return (
-        <header className={styles.headerStyle}>
+        <header className={styles.headerStyle} >
            <div className={styles.cardicon}>
                 <div>
                 <img src={cardicon} alt="icono de una carta de tarot" />

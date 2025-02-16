@@ -4,6 +4,7 @@ import Card from "../../components/cards/Cards";
 import ButtonGroup from "../../components/buttons/buttonGroup/ButtonGroup";
 import FanOfCards from "../../components/fanOfCards/FanOfCards";
 import { fetchAllCards } from "../../services/ApiService";
+import NameAndDate from "../../components/nameAndDate/nameAndDate";
 
 
 
@@ -47,9 +48,10 @@ const Reading = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Lectura de Tarot Sakura</h1>
 
+    <NameAndDate/>
       {error && <div className={styles.error}>{error}</div>}
 
-      <ButtonGroup onClick={fetchThreeUniqueCards} onClear={clearReading} disabled={isLoading} />
+      <ButtonGroup onClick={fetchThreeUniqueCards} onClear={clearReading} disabled={isLoading}  selectedCards={selectedCards}/>
 
       <div className={styles.cardsContainer}>
         {selectedCards &&

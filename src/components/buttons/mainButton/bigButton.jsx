@@ -5,7 +5,7 @@ function ButtonBig (props) {
     return (
         <>
         <Link to={props.link}>
-        <button className={styles.buttonStyle}>
+        <button className={styles.buttonStyle} onClick={props.onClick} disabled={props.disabled}>
             {props.text}
         </button>
         </Link>
