@@ -8,7 +8,19 @@ function FanOfCards() {
   const [startX, setStartX] = useState(0);
   const [cardsData, setCardsData] = useState([]);
 
-  useEffect(() => {
+useEffect(() => {
+    axios
+      .get("https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/")
+      .then((response) => {
+        setCardsData(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching cards:", error);
+      });
+  }, []);
+
+
+  /*useEffect(() => {
     fetch('https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/')
       .then((res) => res.json())
       .then((data) => {
@@ -17,7 +29,7 @@ function FanOfCards() {
       .catch((err) => {
         console.error('Error fetching cards:', err);
       });
-  }, []);
+  }, []);*/
 
   // For a real app, you might want to measure the container size dynamically.
   // Here we pick something static for simplicity.
