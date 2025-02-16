@@ -4,6 +4,9 @@ import Instructions from "../pages/instructions/Instructions"
 import TarotReading from "../components/TarotReading/TarotReading"
 
 
+import Instructions from "../pages/instructions/instructions"
+// import FanOfCards from "../components/FanOfCards/FanOfCards"
+import Favorites from "../pages/favorites/Favorites"
 
 function Router() {
     return (
@@ -12,6 +15,8 @@ function Router() {
                 <Route path="/" element={<App />}/>
                 <Route path="/instructions" element={<Instructions />}/>
                 <Route path="/tarotReading" element={<TarotReading />}/>
+                {/* <Route path="/reading" element={<FanOfCards />}/> */}
+                <Route path="/favorites" element={<Favorites />}/>
             </Routes>
         </BrowserRouter>
     )
