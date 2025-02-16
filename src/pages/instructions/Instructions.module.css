@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 47rem;
+    height: 100vh;
     overflow: hidden;
     background:none;
     font-size: 12px;
@@ -22,10 +22,16 @@
 .tarotImage {
     width: 80%;
     max-width: 300px;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
     .instructions {
-        height: 32rem;
+        height: 93vh;
+        padding: 1rem;
+        padding-bottom: 0%;
+    }
+    .cardsButton{
+        margin: 0;
     }
 }

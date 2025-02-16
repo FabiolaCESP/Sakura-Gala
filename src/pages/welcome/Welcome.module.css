@@ -26,7 +26,7 @@
 
 .unicornImage {
     height: auto;
-    width: 20rem;
+    width: 22rem;
     z-index: 10;
 }
 
@@ -36,13 +36,13 @@
 
 @media (min-width: 768px) {
     .sakuraTitle{
-        font-size: 2.6rem;
+        font-size: 2.8rem;
         padding-bottom: 1rem;
+        padding-top: 2rem;
     }
 
     .unicornImage{
         width: 16rem;
-        padding: 1rem;
     }
 
     .circleEffectStyle{
@@ -51,10 +51,7 @@
     }
 
     .mainSection{
-    height: 34rem;
+    height: 100vh;
     padding: 4rem;
-}
-.circleEffectStyle{
-
 }
 }

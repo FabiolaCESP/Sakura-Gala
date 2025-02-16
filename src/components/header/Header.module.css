@@ -2,13 +2,15 @@
   color:white;
   width: 100%;
   padding: 10px;
-  padding-bottom: 0%;
-  padding-top: 5px;
+  padding: 1rem;
   display: flex;
   background-color: var(--black-gala);
   font-family: 'Macondo';
   align-items: center;
   justify-content: space-between; 
+  position: fixed;
+  top: 0;
+  left: 0%;
 }
 
 .title{
