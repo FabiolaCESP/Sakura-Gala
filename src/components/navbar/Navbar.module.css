@@ -39,6 +39,11 @@
 @media (min-width: 768px) {
   .nav {
     justify-content: center;
+    position: fixed;
+    top: 12%;
+    left: 0;
+    width: 100%;
+    padding: 0;
   }
 
   .navItem {

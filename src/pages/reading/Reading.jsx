@@ -5,7 +5,9 @@ import ButtonGroup from "../../components/buttons/buttonGroup/ButtonGroup";
 import FanOfCards from "../../components/fanOfCards/FanOfCards";
 import { fetchAllCards } from "../../services/ApiService";
 import NameAndDate from "../../components/nameAndDate/nameAndDate";
-
+import Header from "../../components/header/Header";
+import { useMediaQuery } from 'react-responsive';
+import Navbar from "../../components/navbar/Navbar";
 
 
 const Reading = () => {
@@ -44,9 +46,15 @@ const Reading = () => {
     setIsFanned(false); 
   };
 
+  const isDesktop = useMediaQuery({ minWidth: 768 });
+
   return (
+    
     <div className={styles.container}>
-      <h1 className={styles.title}>Lectura de Tarot Sakura</h1>
+      <h2 className={styles.title}>Lectura de Tarot Sakura</h2>
+
+    <Header/>
+    {isDesktop && <Navbar />} 
 
     <NameAndDate/>
       {error && <div className={styles.error}>{error}</div>}

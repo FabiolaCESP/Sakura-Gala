@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+    height: 100vh;
+    width: 100vw;
 }
 
 .readingsContainer h1 {
@@ -10,13 +12,10 @@
 
 .readingsTitle {
     font-family: "Macondo", sans-serif;
-    font-size: 40px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
     text-align: center;
 }
-
-
 
 .readingsList {
     display: flex;
@@ -24,9 +23,10 @@
     justify-content: space-around;
     align-items: center;
     gap: 20px;
-    width: 100%;
+    width: 70%;
     flex-wrap: wrap;
-    margin-top: 40px;   
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     position: relative;
 }
 
@@ -35,7 +35,7 @@
     top: -24px;
     right: 0px;
     background: transparent;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     color: var(--black-gala);
     transition: transform 0.3s ease;
@@ -46,4 +46,11 @@
     transform: scale(1.2);
 }
 
-
+@media (min-width: 768px) {
+    .readingsTitle {
+        font-family: "Macondo", sans-serif;
+        margin-bottom: 1rem;
+        margin-top: 6rem;
+        text-align: center;
+    }
+}

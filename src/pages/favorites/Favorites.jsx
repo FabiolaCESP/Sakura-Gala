@@ -6,6 +6,8 @@ import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import { deleteReading, getReadings } from '../../services/FavoritesApiServices';
 import NameAndDate from '../../components/nameAndDate/nameAndDate';
+import {useMediaQuery} from 'react-responsive';
+import Navbar from '../../components/navbar/Navbar';
 
 
 const Favorites = () => {
@@ -33,12 +35,15 @@ const Favorites = () => {
     await getFavoriteList()
   }
 
+  const isDesktop = useMediaQuery({ minWidth: 768 });
 
   return (
     <>
       <Header />
+      {isDesktop && <Navbar />} 
+
       <main className={styles.readingsContainer}>
-        <h1 className={styles.readingsTitle}>LECTURAS GUARDADAS</h1>
+        <h2 className={styles.readingsTitle}>LECTURAS GUARDADAS</h2>
 
         <ButtonBig
           text="Borrar todo"
@@ -46,6 +51,7 @@ const Favorites = () => {
           disabled={savedFavoritesList.length === 0 }
         />
         {
+          
           savedFavoritesList.map((item, ind) => {
             return (
               <>

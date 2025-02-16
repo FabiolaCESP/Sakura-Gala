@@ -39,7 +39,7 @@ function NameAndDate({ savedDate, savedName }) {
     return (
         <div className={styles.userDetail}>
             <div className={styles.leftSection}>
-                {!open &&  <><span>Nombre:{nameUser}</span>{savedName === undefined && <button onClick={handleEditName}>✏️</button>} </>}
+                {!open &&  <><span>Nombre: {nameUser}</span>{savedName === undefined && <button onClick={handleEditName}>✏️</button>} </>}
                 {open && <UserFormEdit onFinish={setopen} updateUsername={setNameUser} />}
 
             </div>
