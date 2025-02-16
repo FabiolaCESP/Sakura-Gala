@@ -14,7 +14,7 @@
 .card {
   width: 60px;
   height: 100px;
-  background-image: url('../../assets/images/SakuraCard.png');
+  background-image: url("../../assets/images/SakuraCard.png");
   background-size: cover;
   position: absolute;
   transform-origin: bottom center;
@@ -30,45 +30,18 @@
 /* mobile */
 @media (max-width: 768px) {
   .card {
-      width: 50px;
-      height: 80px;
+    width: 50px;
+    height: 80px;
   }
   .fanContainer {
-      bottom: 100px;
+    bottom: 100px;
   }
 }
 
 /* desktop */
 @media (min-width: 1024px) {
   .card {
-      width: 100px;
-      height: 140px;
+    width: 100px;
+    height: 140px;
   }
 }
-
-
-
-/*
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-*/
