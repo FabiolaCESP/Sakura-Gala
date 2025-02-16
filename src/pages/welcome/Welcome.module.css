@@ -3,12 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 54rem;
+    height: 56rem;
     overflow: hidden;
 }
 
 .titleSection{
-    height: 6rem;
+    height: 7rem;
 }
 
 .sakuraTitle {
@@ -26,12 +26,12 @@
 
 .unicornImage {
     height: auto;
-    width: 15rem;
+    width: 20rem;
     z-index: 10;
 }
 
 .imagesSection{
-    height: 30rem;
+    height: 25rem;
 }
 
 @media (min-width: 768px) {
@@ -41,7 +41,7 @@
     }
 
     .unicornImage{
-        width: 12rem;
+        width: 16rem;
         padding: 1rem;
     }
 

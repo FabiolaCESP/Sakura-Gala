@@ -3,19 +3,24 @@
   border-radius: 10px;
   text-align: center;
   font-family: "Macondo", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color:var(--black-gala);
   max-width: 90%;
   margin: 20px auto; 
-  
 }
 .instructionsBox h2 {
-  margin-bottom: 54px; 
+  margin-bottom: 1rem; 
   
 }
 .instructionsBox p {
- text-align: justify;
+ text-align: center;
   margin-bottom: 10px; 
   font-family: "Macondo";
+}
+
+@media (min-width: 768px) {
+  .instructionsBox {
+      font-size: 18px;
+  }
 }
 

@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40rem;
+    height: 47rem;
     overflow: hidden;
     background:none;
     font-size: 12px;
@@ -24,24 +24,8 @@
     max-width: 300px;
 }
 
-@media (max-width: 600px) {
-    .cardsButton {
-        font-size: 12px;
+@media (min-width: 768px) {
+    .instructions {
+        height: 32rem;
     }
-
 }
-
-/* @media (min-width: 768px) {
-    .nav {
-      justify-content: center;
-    }
-  
-    .navItem {
-      font-size: 1em;
-    }
-  
-    .navItem img {
-      width: 30px;
-      height: 30px;
-    }
-  } */
