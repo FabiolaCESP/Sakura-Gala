@@ -24,7 +24,7 @@
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     position: relative;
     padding-left: 1.5rem;
@@ -70,8 +70,8 @@
         gap: 0rem;
         flex-wrap: wrap;
         margin-bottom: 3rem;
-        padding-left: 30%;
-        padding-right: 30%;
+        padding-left: 26%;
+        padding-right: 26%;
         padding-top: 2rem;
     }
 }

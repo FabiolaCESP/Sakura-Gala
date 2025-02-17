@@ -64,12 +64,18 @@
 
   @media (min-height: 600px) {
     .cardsContainer {
-      top: 1rem;
+      top: 3rem;
+    }
+    .readingCard{
+      height: 14vh;
     }
   }
 
   @media (min-height: 800px) {
     .cardsContainer {
       top: 5rem;
+    }
+    .readingCard{
+      height: 22vh;
     }
   }
