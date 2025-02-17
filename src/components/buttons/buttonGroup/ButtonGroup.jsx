@@ -1,35 +1,40 @@
-
-import React, { useState } from "react";
-import styles from "./ButtonGroup.module.css";
-import cardiconReading from "../../../assets/icons/ReadingIcon.svg";
-import archiveIcon from "../../../assets/icons/FavoriteIcon.svg";
-import restartIcon from "../../../assets/icons/DeleteIcon.svg";
+import React, { useState } from 'react';
+import styles from './ButtonGroup.module.css';
+import cardiconReading from '../../../assets/icons/ReadingIcon.svg';
+import archiveIcon from '../../../assets/icons/FavoriteIcon.svg';
+import restartIcon from '../../../assets/icons/DeleteIcon.svg';
 
 const ButtonGroup = ({ onClick, onClear }) => {
-
   const [hasRead, setHasRead] = useState(false);
-  const [favoriteMessage, setFavoriteMessage] = useState("");
 
   const handleAddToFavorites = () => {
-    setFavoriteMessage("Tu lectura ha sido añadida a favoritos.");
-    setTimeout(() => setFavoriteMessage(""), 3000);
+    const dialog = document.createElement('div');
+    dialog.className = styles.favoriteMessage;
+    dialog.textContent = 'Tu lectura ha sido añadida a favoritos.';
+    const buttonsContainer = document.querySelector(`.${styles.buttonsContainer}`);
+    buttonsContainer.parentNode.insertBefore(dialog, buttonsContainer.nextSibling);
+    
+    setTimeout(() => {
+      dialog.remove();
+    }, 3000);
   };
 
   const handleReadingClick = () => {
     onClick();
-    setHasRead(true); 
+    setHasRead(true);
   };
 
   return (
     <div className={styles.buttonsContainer}>
-      <button 
+      <button
         onClick={handleReadingClick}
         className={styles.buttonStyle}
       >
         <img src={cardiconReading} alt="Iniciar lectura tarot" className={styles.icon} />
         <span>Lectura</span>
       </button>
-      <button 
+
+      <button
         onClick={handleAddToFavorites}
         className={styles.buttonStyle}
         disabled={!hasRead}
@@ -38,16 +43,13 @@ const ButtonGroup = ({ onClick, onClear }) => {
         <span>Favoritos</span>
       </button>
 
-      <button 
-        className={styles.buttonStyle} 
+      <button
+        className={styles.buttonStyle}
         onClick={() => window.location.reload()}
       >
         <img src={restartIcon} alt="Reiniciar lectura" className={styles.icon} />
         <span>Reiniciar</span>
       </button>
-      {favoriteMessage && (
-        <div className={styles.favoriteMessage}>{favoriteMessage}</div>
-      )}
     </div>
   );
 };
