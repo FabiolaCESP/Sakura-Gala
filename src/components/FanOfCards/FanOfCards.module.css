@@ -45,3 +45,9 @@
     height: 140px;
   }
 }
+
+@media (min-width: 1469), (min-height: 599) {
+  .fanContainer{
+    bottom: 0em;
+  }
+}

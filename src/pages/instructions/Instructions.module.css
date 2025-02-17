@@ -35,4 +35,13 @@
     .cardsButton{
         margin: 0;
     }
+    
+    .cardsButton {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 10px;
+        max-width: 90%;
+        margin: 20px auto;
+    }
 }

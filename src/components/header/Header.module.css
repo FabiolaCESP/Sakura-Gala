@@ -10,7 +10,7 @@
   position: fixed;
   top: 0;
   left: 0%;
-  z-index: 99;
+  z-index: 999999;
 }
 
 .title{
@@ -47,7 +47,9 @@
 
   @media (min-width: 768px) {
     .headerStyle {
-      padding-top: 0%;
+      padding: 0%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
     }
 
     .header h1 {
