@@ -7,6 +7,7 @@
   color:var(--black-gala);
   max-width: 90%;
 }
+
 .instructionsBox h2 {
   margin-bottom: 5rem; 
 }
@@ -23,6 +24,22 @@
   }
   .instructionsBox h2 {
     margin-bottom: 1rem; 
+  }
+}
+
+@media (min-height: 800px) {
+  .instructionsBox {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Macondo", sans-serif;
+    font-size: 18px;
+    color:var(--black-gala);
+    max-width: 90%;
+    height: 30vh;
+  }
+  .instructionsBox h2 {
+    margin-bottom: 4rem; 
   }
 }
 

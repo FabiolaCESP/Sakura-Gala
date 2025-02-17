@@ -27,7 +27,6 @@
   z-index: 10;
 }
 
-/* mobile */
 @media (max-width: 768px) {
   .card {
     width: 50px;
@@ -38,8 +37,59 @@
   }
 }
 
-/* desktop */
 @media (min-width: 1024px) {
+  .card {
+    width: 100px;
+    height: 140px;
+  }
+  .fanContainer {
+    bottom: 1em;
+  }
+}
+
+
+/* .fanContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 6em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 200px;
+  pointer-events: none;
+}
+
+.card {
+  width: 60px;
+  height: 100px;
+  background-image: url("../../assets/images/SakuraCard.png");
+  background-size: cover;
+  position: absolute;
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.2) translateY(-10px) !important;
+  z-index: 10;
+}
+
+/* mobile */
+/* @media (max-width: 768px) {
+  .card {
+    width: 50px;
+    height: 80px;
+  }
+  .fanContainer {
+    bottom: 100px;
+  }
+}
+
+/* desktop */
+/* @media (min-width: 1024px) {
   .card {
     width: 100px;
     height: 140px;
@@ -50,4 +100,4 @@
   .fanContainer{
     bottom: 0em;
   }
-}
+} */

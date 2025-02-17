@@ -4,7 +4,9 @@
   align-items: center;
   gap: 8px;
   margin-top: 15px;
-  margin-left: 2rem;
+  height: 7rem;
+  position: relative;
+  bottom: -3rem;
 }
 
 .buttonStyle {
@@ -15,7 +17,6 @@
   padding: 10px 20px;
   border-radius: 35px;
   cursor: pointer;
- /* margin-top: 10px;*/
   font-family: "Macondo", sans-serif;
   height: 40px;
   transition: opacity 0.2s ease;
@@ -34,5 +35,11 @@
   .buttonsContainer {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@media (min-height: 800px) {
+  .buttonsContainer{
+    margin-top: 24%;
   }
 }

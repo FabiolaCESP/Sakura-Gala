@@ -43,3 +43,19 @@
         margin-top: 0%;
     }
 }
+
+@media (min-height: 600px) {
+    .userDetail {
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        background: transparent;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: var(--black-gala);
+        font-family: "Macondo", sans-serif;
+        width: 100%;
+        margin-top: 1rem;
+        height: 8vh;
+    }
+  }

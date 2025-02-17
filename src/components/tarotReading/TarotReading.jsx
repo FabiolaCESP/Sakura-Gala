@@ -7,7 +7,6 @@ import FanOfCards from "../../components/fanOfCards/FanOfCards";
 const ReadingTarot = () => {
   return (
     <main className={styles.mainSectionReading}>
-   {/** <Header /> */}  
       <Reading />
       <FanOfCards />
       <Footer />

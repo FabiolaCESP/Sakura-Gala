@@ -15,7 +15,7 @@ const Navbar = () => {
         }
       >
         <img src={BookIcon} alt="Instrucciones" />
-        <span>Instrucciones</span>
+        <span> Instrucciones</span>
       </NavLink>
       <NavLink
         to="/tarotReading"
@@ -24,7 +24,7 @@ const Navbar = () => {
         }
       >
         <img src={ReadingCardIcon} alt="Lectura" />
-        <span>Lectura</span>
+        <span>  Lectura</span>
       </NavLink>
       <NavLink
         to="/favorites"

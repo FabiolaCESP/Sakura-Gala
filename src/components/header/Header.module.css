@@ -48,8 +48,8 @@
   @media (min-width: 768px) {
     .headerStyle {
       padding: 0%;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     .header h1 {
@@ -60,4 +60,11 @@
       padding-top: 0%;
     }
   }
+
   
+  @media (min-height: 800px) {
+  .headerStyle{
+    padding-top: 1rem;
+  }
+}
+
