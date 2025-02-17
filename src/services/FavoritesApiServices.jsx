@@ -10,7 +10,15 @@ function deleteReading(id) {
         
 }
 
-function addReading(data) {
+function addReading(name, cards) {
+    const now = new Date();
+    const data = {
+        id: now.getTime().toString(),
+        date: now.toLocaleDateString(),
+        nameSaved: name,
+        selectedCards: cards,
+    };
+
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     const requestOptions = {

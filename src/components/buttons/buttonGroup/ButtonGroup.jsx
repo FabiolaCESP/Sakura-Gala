@@ -5,12 +5,13 @@ import cardiconReading from "../../../assets/icons/ReadingIcon.svg";
 import archiveIcon from "../../../assets/icons/FavoriteIcon.svg";
 import restartIcon from "../../../assets/icons/DeleteIcon.svg";
 
-const ButtonGroup = ({ onClick, onClear }) => {
+const ButtonGroup = ({ onClick, onAdd, onClear }) => {
 
   const [hasRead, setHasRead] = useState(false);
   const [favoriteMessage, setFavoriteMessage] = useState("");
 
   const handleAddToFavorites = () => {
+    onAdd();
     setFavoriteMessage("Tu lectura ha sido añadida a favoritos.");
     setTimeout(() => setFavoriteMessage(""), 3000);
   };
