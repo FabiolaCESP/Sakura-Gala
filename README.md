@@ -25,9 +25,9 @@ Este proyecto tiene como objetivo crear una aplicación web responsiva e interac
 - **React Router**: Implementado para gestionar la navegación entre las diferentes páginas de la aplicación.
 - **React Hook Form**: Utilizado para gestionar formularios de manera eficiente, con validaciones y manejo de estados en los formularios.
 - **Axios**: Se utiliza para hacer peticiones HTTP a la API y manejar los datos de las cartas y las lecturas.
-- **Backend Fake Server**: Json-server para la persistencia del historial de lecturas.
-- **Llamadas a API**: Axios para gestionar las peticiones HTTP.
-- **Herramientas de desarrollo**: Visual Studio Code, Git/GitHub, Figma para diseño, Jira para la gestión de tareas, Postman para pruebas de API.
+- **Backend Fake Server**: Uso de `json-server` para la persistencia del historial de lecturas.
+- **Gestión de Peticiones**: `Axios` para interactuar con la API de cartas de Sakura.
+- **Herramientas de Desarrollo**: Visual Studio Code, Git/GitHub, Figma (diseño), Jira (gestión de tareas) y Postman (pruebas de API).
 
 ## ✅ Requisitos Funcionales
 
@@ -94,10 +94,22 @@ Trabajamos en equipo bajo metodologías ágiles, combinando **Scrum** y **Kanban
 - Ajustes visuales y mejoras en animaciones y transiciones.
 - Pruebas y optimización del rendimiento.
 
-## 🌐 API Endpoints
+## 🌐 API y Datos Devueltos
 
-- **Obtener todas las cartas:** `GET https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/`
-- **Obtener una carta por ID:** `GET https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/:id`
+La aplicación consume datos de una API externa que proporciona información sobre las cartas de Sakura.
+Los datos que devuelve la API incluyen:
+
+- **ID de la carta** (`id`)
+- **Nombre de la carta** (`name`)
+- **Descripción del significado** (`meaning`)
+- **Imagen asociada** (`imageUrl`)
+
+### Endpoints Disponibles
+
+- **Obtener todas las cartas:** `GET /sakura-cards/`
+- **Obtener una carta específica:** `GET /sakura-cards/:id`
+
+---
 
 ## 🏆 Copyright
 
