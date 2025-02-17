@@ -1,7 +1,5 @@
-//TarotReading.jsx
 import React from "react";
 import styles from "./TarotReading.module.css";
-//import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Reading from "../../pages/reading/Reading";
 import FanOfCards from "../../components/fanOfCards/FanOfCards";

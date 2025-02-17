@@ -30,9 +30,9 @@
   cursor: not-allowed;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .buttonsContainer {
     flex-direction: row;
     justify-content: center;
   }
-} */
+}

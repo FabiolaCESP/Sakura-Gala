@@ -43,7 +43,7 @@
   @media (min-width: 768px) {
     .readingCard {
       display: flex;
-      flex-direction: row;
+      flex-direction: column-reverse;
       justify-content: center;
       width: 80%;
       align-items: center;

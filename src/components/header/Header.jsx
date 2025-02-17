@@ -7,7 +7,7 @@ function Header(){
     return (
         <header className={styles.headerStyle} >
            <div className={styles.cardicon}>
-                <div>
+                <div className={styles.sakuraProductName}>
                 <img src={cardicon} alt="icono de una carta de tarot" />
                 </div>
                 <div>

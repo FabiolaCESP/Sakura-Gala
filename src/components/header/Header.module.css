@@ -10,7 +10,7 @@
   position: fixed;
   top: 0;
   left: 0%;
-  z-index: 99999;
+  z-index: 99;
 }
 
 .title{
@@ -45,14 +45,17 @@
   width: 30px;
 }
 
-  @media screen and (min-width: 768px) {
-    .header {
-      padding-bottom: 0;
+  @media (min-width: 768px) {
+    .headerStyle {
+      padding-top: 0%;
     }
 
     .header h1 {
       font-size: 2em;
     }
     
+    .sakuraProductName{
+      padding-top: 0%;
+    }
   }
   

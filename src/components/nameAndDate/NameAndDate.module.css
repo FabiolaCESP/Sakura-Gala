@@ -10,7 +10,7 @@
 
 .userDetail {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around; 
     align-items: center;
     background: transparent;
     padding: 10px 20px;
@@ -37,7 +37,7 @@
     .userDetail {
         padding: 10px 20px;
         font-size: 1rem;
-        height: 32vh;
+        height: 23vh;
         padding-bottom: 0;
         margin-bottom: 0;
     }

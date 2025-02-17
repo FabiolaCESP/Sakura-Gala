@@ -30,7 +30,7 @@
 }
 
 .cardFront {
-  background-color: var(--orange-gala);
+  background-color: #675F93;
   display: flex;
   align-items: center;
   justify-content: center;
