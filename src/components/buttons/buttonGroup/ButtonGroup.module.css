@@ -4,16 +4,15 @@
   align-items: center;
   gap: 10px;
   margin-top: 15px;
-  height: 7rem;
+  height: auto; 
   position: relative;
-  bottom: -3rem;
 }
 
 .buttonStyle {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; 
+  gap: 8px;
   background-color: var(--orange-gala);
   color: var(--black-gala);
   font-size: 18px;
@@ -38,7 +37,31 @@
 .icon {
   width: 18px;
   height: 18px;
+}
 
+.favoriteMessage {
+  background-color: var(--orange-gala);
+  color: var(--black-gala);
+  font-family: "Macondo", sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  max-width: 220px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -46,10 +69,13 @@
     flex-direction: row;
     justify-content: center;
   }
-}
 
-@media (min-height: 800px) {
-  .buttonsContainer{
-    margin-top: 24%;
+  .favoriteMessage {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; 
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
   }
 }
