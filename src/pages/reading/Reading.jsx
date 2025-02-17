@@ -4,6 +4,7 @@ import Card from "../../components/cards/Cards";
 import ButtonGroup from "../../components/buttons/buttonGroup/ButtonGroup";
 import FanOfCards from "../../components/fanOfCards/FanOfCards";
 import { fetchAllCards } from "../../services/ApiService";
+import { addReading } from '../../services/FavoritesApiServices';
 import NameAndDate from "../../components/nameAndDate/nameAndDate";
 import Header from "../../components/header/Header";
 import { useMediaQuery } from 'react-responsive';
@@ -14,7 +15,14 @@ const Reading = () => {
   const [selectedCards, setSelectedCards] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [isFanned, setIsFanned] = useState(false); 
+  const [isFanned, setIsFanned] = useState(false);
+  const [savedName] = useState(() => {
+    const value = localStorage.getItem('username');
+    if (value !== null && value !== "undefined") {
+      return JSON.parse(value);
+    }
+    return '';
+  });
 
   const fetchThreeUniqueCards = async () => {
     setIsLoading(true);
@@ -40,6 +48,10 @@ const Reading = () => {
       setIsLoading(false);
     }
   };
+
+  const addReadingToFavorites = async () => {
+    addReading(savedName, selectedCards);
+  }
 
   const clearReading = () => {
     setSelectedCards(null);
@@ -67,7 +79,7 @@ const Reading = () => {
           </div>
 
          <div>
-          <ButtonGroup onClick={fetchThreeUniqueCards} onClear={clearReading} disabled={isLoading}  selectedCards={selectedCards}/>
+          <ButtonGroup onClick={fetchThreeUniqueCards} onAdd={addReadingToFavorites} onClear={clearReading} disabled={isLoading}  selectedCards={selectedCards}/>
           </div>
       </div>
 
