@@ -29,7 +29,7 @@ function UserForm() {
         <>
         <form className={styles.formCard}>
             <input className={styles.inputForm} htmlFor="name" type="text" 
-                placeholder="Entra tu nombre" {...register("Username", {
+                placeholder="Ingresa tu nombre" {...register("Username", {
                     required: {
                         value: true,
                         message: '❌Mínimo de 1 caracter!❌'
