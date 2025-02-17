@@ -39,8 +39,21 @@
         rgba(0, 0, 0, 0) 100%
         );
 
-background: var(--gradient-bg);
-min-height: 100vh;
+        --gradient2-bg: linear-gradient(
+            to bottom,
+            rgba(181, 148, 181, 0.5) 2%,
+            rgba(200, 149, 200, 0.4) 30%,
+            rgba(81, 54, 165, 0.3) 40%,
+            rgba(61, 39, 128, 0.2) 60%,
+            rgba(0, 0, 0, 0) 80%,
+            rgba(61, 39, 128, 0.2) 100%,
+            rgba(81, 54, 165, 0.3) 120%,
+            rgba(200, 149, 200, 0.4) 140%,
+            rgba(181, 148, 181, 0.5) 60%
+    );
+
+background: var(--gradient2-bg);
+height: 100%;
 }
 
 

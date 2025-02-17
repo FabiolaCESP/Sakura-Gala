@@ -6,12 +6,13 @@
     height: 100vh;
     width: 100vw;
     padding: 20px;
-    font-family: 'macondo', sans-serif;
+    overflow: hidden;
+    padding-top: 5rem;
   }
   
   .readingCard {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 33vh;
   }
 
@@ -48,5 +49,33 @@
       width: 80%;
       align-items: center;
       height: 10vh;
+      padding-top: 0%;
+      bottom: 100%;
+    }
+
+    .cardsContainer {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      position: relative;
+    }
+  }
+
+  @media (min-height: 600px) {
+    .cardsContainer {
+      top: 3rem;
+    }
+    .readingCard{
+      height: 14vh;
+    }
+  }
+
+  @media (min-height: 800px) {
+    .cardsContainer {
+      top: 5rem;
+    }
+    .readingCard{
+      height: 22vh;
     }
   }
