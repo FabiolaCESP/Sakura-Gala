@@ -1,50 +1,49 @@
+
 import React, { useState } from "react";
 import styles from "./ButtonGroup.module.css";
-import { addReading } from "../../../services/FavoritesApiServices";
-import { v4 as uuidv4 } from 'uuid';
+import cardiconReading from "../../../assets/icons/ReadingIcon.svg";
+import archiveIcon from "../../../assets/icons/FavoriteIcon.svg";
+import restartIcon from "../../../assets/icons/DeleteIcon.svg";
 
-const ButtonGroup = ({ onClick, onClear, disabled, selectedCards }) => {
+const ButtonGroup = ({ onClick, onClear }) => {
+
+  const [hasRead, setHasRead] = useState(false);
   const [favoriteMessage, setFavoriteMessage] = useState("");
-  const [showButtonFavorites, setShowButtonFavorites] = useState(true);
 
-  const handleAddToFavorites = async () => {
-    const today = new Date();
-    const currentDate = today.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: '2-digit' });
-    const value = localStorage.getItem('username')
-    let userNameCurrent = ""
-    if (value !== null && value !== "undefined") {
-        userNameCurrent=(JSON.parse(localStorage.getItem('username')))
-    }
-    const dataCard = {
-      "id": uuidv4(),
-      "date": currentDate,
-      "nameSaved":userNameCurrent,
-      "selectedCards": selectedCards
-    }
-    const result = await addReading(dataCard);
-    setShowButtonFavorites(true)
+  const handleAddToFavorites = () => {
     setFavoriteMessage("Tu lectura ha sido añadida a favoritos.");
-
     setTimeout(() => setFavoriteMessage(""), 3000);
+  };
+
+  const handleReadingClick = () => {
+    onClick();
+    setHasRead(true); 
   };
 
   return (
     <div className={styles.buttonsContainer}>
-      <button
-        onClick={()=>{
-          onClick();
-          setShowButtonFavorites(false);
-        }}
+      <button 
+        onClick={handleReadingClick}
         className={styles.buttonStyle}
-        disabled={disabled}
       >
-        🎴 Lectura
+        <img src={cardiconReading} alt="Iniciar lectura tarot" className={styles.icon} />
+        <span>Lectura</span>
       </button>
-      <button onClick={handleAddToFavorites} className={styles.buttonStyle} disabled={selectedCards===null || showButtonFavorites}>
-        ⭐ Añadir a Favoritos
+      <button 
+        onClick={handleAddToFavorites}
+        className={styles.buttonStyle}
+        disabled={!hasRead}
+      >
+        <img src={archiveIcon} alt="Añadir a Favoritos" className={styles.icon} />
+        <span>Favoritos</span>
       </button>
-      <button className={styles.buttonStyle} onClick={onClear}>
-        ❌ Eliminar
+
+      <button 
+        className={styles.buttonStyle} 
+        onClick={() => window.location.reload()}
+      >
+        <img src={restartIcon} alt="Reiniciar lectura" className={styles.icon} />
+        <span>Reiniciar</span>
       </button>
       {favoriteMessage && (
         <div className={styles.favoriteMessage}>{favoriteMessage}</div>
