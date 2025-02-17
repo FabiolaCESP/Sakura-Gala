@@ -6,7 +6,7 @@
     padding: 10px 20px;
     border-radius: 39px;
     cursor: pointer;
-    margin-top: 10px;
     font-family: "Macondo", sans-serif;
     height: 41px;
+    width: max-content;
 }
