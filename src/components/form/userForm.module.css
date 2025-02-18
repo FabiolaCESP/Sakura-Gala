@@ -24,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 5em;
 }
 
 .submitButton {
@@ -38,4 +38,10 @@
     margin-top: 10px;
     font-family: "Macondo", sans-serif;
     height: 41px;
+}
+
+@media (min-width: 768px) {
+    .formCard {
+        padding-top: 1rem;
+    }
 }
