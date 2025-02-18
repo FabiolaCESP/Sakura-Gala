@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import App from "../App"
 import Instructions from "../pages/instructions/Instructions"
-import TarotReading from "../components/TarotReading/TarotReading"
+import TarotReading from "../pages/tarotReading/TarotReading"
 import Favorites from "../pages/favorites/Favorites"
 
 function Router() {

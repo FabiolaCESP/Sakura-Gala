@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export const fetchAllCards = async () => {
   try {
@@ -11,4 +11,3 @@ export const fetchAllCards = async () => {
     return [];
   }
 };
-  
