@@ -52,3 +52,9 @@
     bottom: 0;
   }
 }
+
+@media (min-height: 800px) {
+  .fanContainer {
+    bottom: 5rem;
+  }
+}
