@@ -14,7 +14,7 @@ const Navbar = () => {
           isActive ? styles.active : styles.navItem
         }
       >
-        <img src={BookIcon} alt="Instrucciones" />
+        <img src={BookIcon} alt=" Link a Instrucciones" />
         <span> Instrucciones</span>
       </NavLink>
       <NavLink
@@ -23,7 +23,7 @@ const Navbar = () => {
           isActive ? styles.active : styles.navItem
         }
       >
-        <img src={ReadingCardIcon} alt="Lectura" />
+        <img src={ReadingCardIcon} alt="Link a Lecturas" />
         <span> Lecturas</span>
       </NavLink>
       <NavLink
@@ -32,7 +32,7 @@ const Navbar = () => {
           isActive ? styles.active : styles.navItem
         }
       >
-        <img src={ArchiveIcon} alt="Favoritos" />
+        <img src={ArchiveIcon} alt="Link a Favoritos" />
         <span>Favoritos</span>
       </NavLink>
     </nav>

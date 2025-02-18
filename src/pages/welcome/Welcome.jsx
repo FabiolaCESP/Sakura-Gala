@@ -14,7 +14,7 @@ function PageWelcome () {
                 <h1 className={styles.sakuraTitle}>SAKURA TAROT</h1>
             </div>
             <section className={styles.imagesSection}>
-                <img className={styles.unicornImage} src={sakuraUnicorn}/>
+                <img className={styles.unicornImage} src={sakuraUnicorn} alt="Imagen de un unicornio"/>
             </section>
 
             <UserForm/>

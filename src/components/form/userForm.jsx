@@ -43,7 +43,8 @@ function UserForm() {
                         message: '❌Solo se aceptan letras!❌',
                     }})} />
             {errors.Username && <span className={styles.spanError}>{errors.Username.message}</span>}
-            <input className={styles.submitButton} type="submit" value={'Registrar'} onClick={handleSubmit((onSubmit))}/>
+            <input className={styles.submitButton} type="submit" value={'Registrar'}
+            alt="Botón para Registrar" onClick={handleSubmit((onSubmit))}/>
         </form>
         </>
     )

@@ -42,7 +42,7 @@ const ButtonGroup = ({ onClick, onAdd, onClear }) => {
         disabled={!hasRead}
       >
         <img src={archiveIcon} alt="Añadir a Favoritos" className={styles.icon} />
-        <span>Favoritos</span>
+        <span>Favorito</span>
       </button>
 
       <button

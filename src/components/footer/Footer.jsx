@@ -15,7 +15,7 @@ const Footer = () => {
       <div className={styles.contentWrapper}>
       {isMobile && location.pathname !== "/" && <Navbar />}
         <div className={styles.logo}>
-          <img src={LogoGala} alt="Gala" />
+          <img src={LogoGala} alt="Logo de Gala" />
         </div>
       </div>
     </footer>
