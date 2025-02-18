@@ -1,3 +1,187 @@
 {
-  "readings": []
+  "readings": [
+    {
+      "id": "1739869100828",
+      "date": "18/2/2025",
+      "nameSaved": "ASas",
+      "selectedCards": {
+        "Pasado": {
+          "id": "7",
+          "cardNumber": 7,
+          "spanishName": "Salto",
+          "englishName": "The Jump",
+          "kanji": "跳",
+          "Rōmaji": "Odo",
+          "appeardManga": "1",
+          "appeardAnime": "5",
+          "clowCard": "https://i.ibb.co/BfJYRBK/Salto.jpg",
+          "sakuraCard": "https://i.ibb.co/QdT7ZjS/Salto-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Representa la evasión de los problemas.",
+          "__v": 0
+        },
+        "Presente": {
+          "id": "54",
+          "cardNumber": 54,
+          "spanishName": "La Nada",
+          "englishName": "The Nothing",
+          "kanji": "無",
+          "Rōmaji": "Mu",
+          "appeardManga": "",
+          "appeardAnime": "Movie n° 2",
+          "clowCard": "https://i.ibb.co/gPXkCJZ/Nada.jpg",
+          "sakuraCard": "https://i.ibb.co/zG7fpxp/Nada-Sakura.jpg",
+          "meaning": "Simboliza el espacio vacío, la nada, lo negativo.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        "Futuro": {
+          "id": "14",
+          "cardNumber": 14,
+          "spanishName": "Tiempo",
+          "englishName": "The Time",
+          "kanji": "時",
+          "Rōmaji": "Toki",
+          "appeardManga": "",
+          "appeardAnime": "12",
+          "clowCard": "https://i.ibb.co/nQjGfBQ/Tiempo.jpg",
+          "sakuraCard": "https://i.ibb.co/p4kcRMS/Tiempo-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Simboliza el paso del tiempo, su escasez.",
+          "__v": 0
+        }
+      }
+    },
+    {
+      "id": "1739869108989",
+      "date": "18/2/2025",
+      "nameSaved": "ASas",
+      "selectedCards": {
+        "Pasado": {
+          "id": "7",
+          "cardNumber": 7,
+          "spanishName": "Salto",
+          "englishName": "The Jump",
+          "kanji": "跳",
+          "Rōmaji": "Odo",
+          "appeardManga": "1",
+          "appeardAnime": "5",
+          "clowCard": "https://i.ibb.co/BfJYRBK/Salto.jpg",
+          "sakuraCard": "https://i.ibb.co/QdT7ZjS/Salto-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Representa la evasión de los problemas.",
+          "__v": 0
+        },
+        "Presente": {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0
+        },
+        "Futuro": {
+          "id": "39",
+          "cardNumber": 39,
+          "spanishName": "Burbujas",
+          "englishName": "The Bubbles",
+          "kanji": "泡",
+          "Rōmaji": "Awa",
+          "appeardManga": "",
+          "appeardAnime": "35/36",
+          "clowCard": "https://i.ibb.co/jDBH1Nw/Burbujas.jpg",
+          "sakuraCard": "https://i.ibb.co/8sQ5Yrg/Burbujas-Sakura.jpg",
+          "meaning": " Simboliza la multitud, la unión, el camuflaje.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "1739869115453",
+      "date": "18/2/2025",
+      "nameSaved": "ASas",
+      "selectedCards": {
+        "Pasado": {
+          "id": "10",
+          "cardNumber": 10,
+          "spanishName": "Trueno",
+          "englishName": "The Thunder",
+          "kanji": "雷",
+          "Rōmaji": "Kaminari",
+          "appeardManga": "10",
+          "appeardAnime": "8",
+          "clowCard": "https://i.ibb.co/41jrxGB/Trueno.jpg",
+          "sakuraCard": "https://i.ibb.co/1LvxQsH/Trueno-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la parálisis, la energía",
+          "__v": 0
+        },
+        "Presente": {
+          "id": "25",
+          "cardNumber": 25,
+          "spanishName": "Canción",
+          "englishName": "The Song",
+          "kanji": "歌",
+          "Rōmaji": "Uta",
+          "appeardManga": "",
+          "appeardAnime": "23",
+          "clowCard": "https://i.ibb.co/hmyxC61/Canci-n.jpg",
+          "sakuraCard": "https://i.ibb.co/3kmsTBj/Canci-n-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Simboliza la paz, la tranquilidad y la alegría.",
+          "__v": 0
+        },
+        "Futuro": {
+          "id": "1",
+          "cardNumber": 1,
+          "spanishName": "Viento",
+          "englishName": "The Windy",
+          "kanji": "風",
+          "Rōmaji": "Kaze",
+          "appeardManga": "1",
+          "appeardAnime": "1",
+          "clowCard": "https://i.ibb.co/ftvH3CX/Viento.jpg",
+          "sakuraCard": "https://i.ibb.co/k5HVTP7/Viento-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el intelecto, la sabiduría, la meteorología muestra información valiosa.",
+          "__v": 0
+        }
+      }
+    }
+  ]
 }

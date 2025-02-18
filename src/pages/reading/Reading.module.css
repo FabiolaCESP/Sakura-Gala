@@ -23,7 +23,7 @@
   }
   
   .error {
-    color: var(--red-gala);
+    color: var(--white-gala);
     margin: 10px 0;
     padding: 10px;
     background-color: var(--red-gala);

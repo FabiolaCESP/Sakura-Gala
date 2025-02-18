@@ -1,58 +1,64 @@
 .mainSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.titleSection{
-    height: 7rem;
+.titleSection {
+  height: 7rem;
 }
 
 .sakuraTitle {
-    font-family: 'Macondo', sans-serif;
-    font-size: 3rem;
+  font-family: "Macondo", sans-serif;
+  font-size: 3rem;
 }
 
-.circleEffectStyle{
-    position: absolute;
-    left: 18%;
-    top: 9rem;
-    z-index: -1;
-    height: 20rem;
+.circleEffectStyle {
+  position: absolute;
+  left: 18%;
+  top: 9rem;
+  z-index: -1;
+  height: 20rem;
 }
 
 .unicornImage {
-    height: auto;
-    width: 22rem;
-    z-index: 10;
+  height: auto;
+  width: 22rem;
+  z-index: 10;
 }
 
-.imagesSection{
-    height: 25rem;
+.imagesSection {
+  height: 25rem;
 }
 
 @media (min-width: 768px) {
-    .sakuraTitle{
-        font-size: 2.8rem;
-        padding-bottom: 1rem;
-        padding-top: 2rem;
-    }
+  .sakuraTitle {
+    font-size: 2.8rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
 
-    .unicornImage{
-        width: 16rem;
-    }
+  .unicornImage {
+    width: 16rem;
+  }
 
-    .circleEffectStyle{
-        left: 33.6rem;
-        top: 2.5rem;
-    }
+  .circleEffectStyle {
+    left: 33.6rem;
+    top: 2.5rem;
+  }
 
-    .mainSection{
+  .mainSection {
     height: 100vh;
     padding: 4rem;
+  }
 }
+
+@media (min-height: 768px) {
+  .imagesSection {
+    height: 20rem;
+  }
 }
